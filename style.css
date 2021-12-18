@@ -10,24 +10,33 @@ body{
 
 .container{
     margin: 0px auto;
+    margin-bottom: 10%;
 }
 
 table{
     border: 1px solid rgb(133, 127, 127);
-    border-radius: 10px ;
+    border-radius: 20px;
     border-collapse: collapse;
 }
 
 th{
     padding: 7px;
     border: 1px solid rgb(131, 110, 110);
+    border-radius: 5px;
 }
 
 td{
     padding: 7px;
     border: 1px solid rgb(131, 110, 110);
+    font-weight: 500;
 }
 
 tr:nth-child(even){
     background: rgba(199, 194, 194, 0.933);
+}
+
+@media (max-width:450px) {
+    .container{
+        width: 90%;
+    }
 }
